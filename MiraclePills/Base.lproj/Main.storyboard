@@ -120,6 +120,7 @@
                                     <action selector="onBuyNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VD9-5Y-vy6"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="OCB-0g-GSv"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -136,11 +137,13 @@
                             <constraint firstItem="Obe-bC-IUM" firstAttribute="top" secondItem="ZQW-3q-2xG" secondAttribute="bottom" constant="8" id="BVa-gJ-bav"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e2A-Tp-icE" secondAttribute="trailing" constant="176" id="CnB-fY-9is"/>
                             <constraint firstItem="HGs-Mg-GNH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Da1-n4-Xcn"/>
+                            <constraint firstItem="OCB-0g-GSv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EbS-KF-zmB"/>
                             <constraint firstItem="Obe-bC-IUM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FnM-hC-aVs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f5p-KR-9K8" secondAttribute="trailing" constant="20" id="HA4-a2-foG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rCv-LB-lt3" secondAttribute="trailing" constant="20" id="HBr-rg-pTT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yfj-xu-LR5" secondAttribute="trailing" constant="20" id="IHb-cC-4Vw"/>
                             <constraint firstItem="f5p-KR-9K8" firstAttribute="top" secondItem="HGs-Mg-GNH" secondAttribute="bottom" constant="8" symbolic="YES" id="KwI-E9-60f"/>
+                            <constraint firstItem="OCB-0g-GSv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LZ6-fb-26D"/>
                             <constraint firstItem="f5p-KR-9K8" firstAttribute="leading" secondItem="GqT-tr-ymm" secondAttribute="leading" id="Lh1-xd-vgh"/>
                             <constraint firstItem="e2A-Tp-icE" firstAttribute="top" secondItem="yfj-xu-LR5" secondAttribute="bottom" constant="4" id="MsU-Ba-Rwk"/>
                             <constraint firstItem="YwL-qr-rBa" firstAttribute="top" secondItem="kQU-RE-UYL" secondAttribute="bottom" constant="25" id="NK4-Zg-KCc"/>
@@ -190,6 +193,7 @@
                         <outlet property="stateLabel" destination="yfj-xu-LR5" id="HE8-Tb-FZj"/>
                         <outlet property="streetField" destination="Obe-bC-IUM" id="ohZ-no-cRd"/>
                         <outlet property="streetLabel" destination="ZQW-3q-2xG" id="h9V-2S-xy4"/>
+                        <outlet property="successImage" destination="OCB-0g-GSv" id="ZKo-Ch-jJi"/>
                         <outlet property="titleLabel" destination="vJg-7c-bbB" id="ZdF-0s-oqI"/>
                         <outlet property="zipField" destination="kQU-RE-UYL" id="L6g-20-gsq"/>
                         <outlet property="zipLabel" destination="TPm-RQ-Gop" id="ca9-UX-SLO"/>
@@ -203,5 +207,6 @@
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>

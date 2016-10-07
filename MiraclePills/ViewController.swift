@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    @IBOutlet weak var successImage: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var pillLabel: UILabel!
     @IBOutlet weak var pillImage: UIImageView!
@@ -31,12 +32,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var borderView: UIView!
     
     let states = ["Alaska", "Arkansas", "California", "New York"]
-    
     var formElements: Array<UIView> = [];
     
     @IBAction func onBuyNow(_ sender: UIButton) {
         enableForm(false)
-        sender.isHidden = true
+        successImage.isHidden = false
     }
     
     @IBAction func onButton(_ sender: UIButton) {
